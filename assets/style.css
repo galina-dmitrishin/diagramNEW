@@ -1,0 +1,311 @@
+body {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.wraper-circle {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -110px;
+    margin-top: -40px;
+    background: url("./img/bg.png") top 40px right no-repeat;
+}
+
+.circleH1 {
+    color: #434343;
+    font-family: "Open Sans", sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 200px;
+    text-align: left;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(#155b54 72deg, #1b786e 72deg 144deg, #1d7e74 144deg 216deg, #1f887e 216deg 288deg, #249c90 288deg);
+    position: relative;
+    
+}
+
+.circle__center {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;    
+}
+
+.circle1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #155b54;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    box-shadow: -15px 3px 15px -5px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.circle2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1b786e;
+    z-index: 2;
+    position: absolute;
+    top: 82px;
+    left: 234px;   
+    box-shadow: -10px -15px 15px -5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.circle3 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1d7e74;
+    z-index: 2;
+    position: absolute;
+    top: 217px;
+    left: 190px;   
+    box-shadow: 10px -10px 15px -5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.circle4 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1f887e;
+    z-index: 2;
+    position: absolute;
+    top: 217px;
+    left: 50px;   
+    box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.circle5 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #249c90;
+    z-index: 2;
+    position: absolute;
+    top: 82px;
+    right: 234px;   
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.circle__text-head {
+    color: #45818e;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover{
+    font-size: 30px;
+}
+
+.circle__text1 {
+    width: 210px;
+    height: 192px;
+    border: 1px solid #a7a7a7;
+    box-shadow: 15px 15px 25px -5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #0b5394;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: left;
+    padding: 10px;
+    margin-top: -160px;
+    margin-left: 200px;
+    visibility: visible;
+    transition: all .3s;
+    display: none;
+}
+  
+.circle1:hover .circle__text1 {
+    visibility: visible;
+    transform: scale(1.2);
+}
+
+.circle__text2 {
+    width: 195px;
+    height: 195px;
+    border: 1px solid #a7a7a7;
+    box-shadow: 15px 15px 25px -5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #0b5394;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: left;
+    padding: 10px;
+    margin-top: -110px;
+    margin-left: 330px;
+    visibility: visible;
+    transition: all .3s;
+    display: none;
+}
+  
+.circle2:hover .circle__text2 {
+    visibility: visible;
+    transform: scale(1.2);
+}
+
+.circle__text3 {
+    width: 200px;
+    height: 220px;
+    border: 1px solid #a7a7a7;
+    box-shadow: 15px 15px 25px -5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #0b5394;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: left;
+    padding: 10px;
+    margin-top: -70px;
+    margin-left: 120px;
+    visibility: visible;
+    transition: all .3s;
+    display: none;
+}
+  
+.circle3:hover .circle__text3 {
+    visibility: visible;
+    transform: scale(1.2);
+}
+
+.circle__text4 {
+    width: 178px;
+    height: 210px;
+    border: 1px solid #a7a7a7;
+    box-shadow: 15px 15px 25px -5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #0b5394;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: right;
+    padding: 10px;
+    margin-top: -130px;
+    margin-left: -280px;
+    visibility: visible;
+    transition: all .3s;
+    display: none;
+}
+  
+.circle4:hover .circle__text4 {
+    visibility: visible;
+    transform: scale(1.2);
+}
+
+.circle__text5 {
+    width: 187px;
+    height:190px;
+    border: 1px solid #a7a7a7;
+    box-shadow: 15px 15px 25px -5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #0b5394;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: right;
+    padding: 10px;
+    margin-top: -260px;
+    margin-left: -210px;
+    visibility: visible;
+    transition: all .3s;
+    display: none;
+}
+  
+.circle5:hover .circle__text5 {
+    visibility: visible;
+    transform: scale(1.2);
+}
+
